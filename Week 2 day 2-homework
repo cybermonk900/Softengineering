@@ -19,3 +19,14 @@ while input_number != secret_number:
         print("Ha ha! You're stuck in my loop")
         input_number = int(input("Enter a number: "))
 print("Well donne, muggle! you are free now")
+
+
+############Ex 3.2.1.6##################################
+#Write a program that uses a for loop to "count mississippily" to five. Having counted to five, the program should print to the screen the final message "Ready or not, here I come!"
+
+import time
+for a in range(1,6):  #for loop that counts to five
+    print(a, "Mississippi") #Prints the loop iteration number and the word "Mississippi".
+    time.sleep(1)  #uses imported time and sleep method to suspend the execution of each subsequent print function inside for loop
+print("Ready or not, here I come")
+
