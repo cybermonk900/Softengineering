@@ -1,0 +1,50 @@
+###############################Exercise 3.1.1.4########################################################
+#if statement that inputs an integer. Prints False if n<100 and True if n>100 
+n=int(input("enter an integer: "))
+if n<100:
+    print(False)
+else:
+    print(True)
+
+
+##############################Exercise 3.1.1.10#################################################################
+##Exercise using if statements to input word 'Spathiphyllum' and check the input word conditions
+k = input("Enter the word Spathiphyllum: ")
+if k == "Spathiphyllum":
+    print("Yes - Spathiphyllum is the best plant ever")
+elif k == "spathiphyllum":
+    print("No, I want a big Spathiphyllum!")
+else:
+    print("Spathiphyllum! Not", k)
+
+ ####################################Exercise 3.1.1.11###########################################################################
+  #Exercise to calculate annual tax 
+
+income = float(input("Enter the annual income: "))
+
+if income <=85528: 
+    tax=((income*18)/100) - 556.02
+else:
+    tax=(((income-85528)*32)/100) + 14839.02
+if tax <=0:
+    tax=0.0
+tax = round(tax, 0)
+print("The tax is:", tax, "thalers")
+
+
+#######################Exercise 3.1.1.11 (continued including Jury duty)################################################
+
+income = float(input("Enter the annual income: "))
+service = input("Do you do jury service?(enter 'y' or 'n'): ")
+if income <= 85528 and service == 'y': #conditional statement to check two conditions
+    tax = (((income*18)/100) - 556.02)*0.5 # tax is deducted by 0.5
+elif income <= 85528 and service == "n":
+       tax = ((income*18)/100) - 556.02
+elif income > 85528 and service == "y":
+    tax = ((((income-85528)*32)/100) + 14839.02)*0.5
+else:
+    tax = (((income-85528)*32)/100) + 14839.02
+if tax <= 0:
+    tax = 0.0
+tax = round(tax, 0)
+print("The tax is:", tax, "thalers")
