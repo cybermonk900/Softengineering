@@ -1,0 +1,41 @@
+# Day 2 exercise 1
+john=3
+mary=5
+adam=6
+print(john, mary, adam, sep=",") #sep parameter from print function used to separate arguments by ,
+total_apples=(john + mary + adam)
+print(total_apples) #prints sum of total apples from line 5
+average_apples= (total_apples)/3
+print(average_apples)
+
+# Day 2 exercise 2
+kilometers = 12.25
+miles = 7.38
+
+miles_to_kilometers = miles * 1.61
+kilometers_to_miles = kilometers / 1.61
+miles_to_furlongs = miles * 4 #1 mile is equal to 4 furlongs
+
+print(miles, "miles is", round(miles_to_kilometers, 2), "kilometers", "or", round(miles_to_furlongs,2), "furlongs")
+print(kilometers, "kilometers is", round(kilometers_to_miles, 2), "miles", "or",round(kilometers_to_miles *4,2), "furlongs")
+
+#Day 2 exercise 3 
+
+x = 0
+x = float(x)
+y = 3*x**3 - 2*x**2 + 3*x - 1 # 3x^3 - 2x^2 + 3x - 1
+print("y =", y)
+
+# Day 2 exercise 4
+
+#this program computes the number of seconds in a given number of hours
+
+
+a = 2 # number of hours
+seconds = 3600 # number of seconds in 1 hour
+
+print("Hours: ", a) #printing the number of hours
+print("Seconds in Hours: ", a * seconds) # printing the number of seconds in a given number of hours
+
+
+#this is the end of the program that computes the number of seconds in 3 hou
