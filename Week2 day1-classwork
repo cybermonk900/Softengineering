@@ -4,16 +4,13 @@
 #number = int(input("Enter a number or type -1 to stop: "))
 ## If the number is not equal to -1, continue.
 #while number != -1:
-
 #    # Is number larger than largest_number?
-
 #    if number > largest_number:
 #        # Yes, update largest_number.
 #        largest_number = number
 #    # Input the next number.
 #    number = int(input("Enter a number or type -1 to stop: "))
-
-## Print the largest number.
+## Prints the largest number.
 #print("The largest number is:", largest_number)
 
  ######################################*******************#################################
@@ -26,7 +23,6 @@ even_numbers = 0
 divisible_by_3 = 0
 # Read the first number.
 number = int(input("Enter a number or type 0 to stop: "))
-
 # 0 terminates execution.
 while number != 0:
     # Check if the number is odd.
@@ -40,19 +36,18 @@ while number != 0:
         divisible_by_3+=1
     # Read the next number.
     number = int(input("Enter a number or type 0 to stop: "))
-
 # Print results.
 print("Odd numbers count:", odd_numbers)
 print("Even numbers count:", even_numbers)
 print("Numbers divisible by 3 count: ", divisible_by_3)
 
-#create a list to display numbers from 50 to 100 with an increment of 10
+###########################create a list to display numbers from 50 to 100 with an increment of 10
 l=[]
 for i in range(50, 101, 10):
    l.append(i)
 print(l)
 
-#Program to input a year and check if its a leap year or not
+###########################Program to input a year and check if its a leap year or not
 
 year=int(input("Enter a year: "))
 if year <1584:
