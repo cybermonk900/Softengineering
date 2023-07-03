@@ -4,15 +4,20 @@ input_number = int(input("Enter a number: "))
 while input_number != secret_number:
     print("Ha ha! You're stuck in my loop")
     input_number = int(input("Enter a number: "))
-else:
-    print("Well donne, muggle! you are free now")
+if input_number == 777:
+    print("Well donne, muggle! you are free now"))
 
-### Another way (Easier to understand):
+
+
+#stretch task
+#If a user puts 7 print  'getting closer'
 secret_number = 777
 input_number = int(input("Enter a number: "))
-if input_number == secret_number:
-    print("Well donne, muggle! you are free now")
-else:
-    while input_number != secret_number:
+while input_number != secret_number:
+    if input_number == 7:
+        print("You are getting closer!")
+        input_number = int(input("Enter a number: "))
+    else:
         print("Ha ha! You're stuck in my loop")
         input_number = int(input("Enter a number: "))
+print("Well donne, muggle! you are free now")
