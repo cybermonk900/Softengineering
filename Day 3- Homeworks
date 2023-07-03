@@ -1,0 +1,47 @@
+#First exercise:
+# code in order to evaluate the results of four basic arithmetic operations.
+
+# input a float value for variable a here
+a=float(input("enter a value for number a: "))
+# input a float value for variable b here
+b=float(input("enter a value for number b: "))
+# output the result of addition here
+sum_of_a_and_b=a+b
+print("sum of a and b is:", sum_of_a_and_b)
+# output the result of subtraction here
+subtraction_of_a_and_b=a - b
+print("subtraction of a and b is:", subtraction_of_a_and_b)
+# output the result of multiplication here
+multiplication_of_a_and_b=a*b
+print("multiplication of a and b is:", multiplication_of_a_and_b)
+# output the result of division here
+division_of_a_and_b=a/b
+print("division of a and b is:", division_of_a_and_b)
+# output the result of exponent here
+exponent_of_a=a**2
+exponent_of_b=b**2
+print("exponent of a is:", exponent_of_a, "and exponent of b is:", exponent_of_b)
+# output the result of floor division here
+floor_division_of_a_and_b=a//b
+print("floor division of a and b is:", floor_division_of_a_and_b)
+print("\nThat's all, folks!")
+
+#Second exercise
+  # to evaluate an expression
+
+x = float(input("Enter value for x: "))
+y=1/(x+1/(x+1/(x+1/x)))
+
+print("y =", y)
+
+  #Third exercise
+  #a simple code able to evaluate the end time of a period of time, given as a number of minutes (it could be arbitrarily large). The start time is given as a pair of hours (0..23) and minutes (0..59). The result has to be printed to the console
+
+hour = int(input("Starting time (hours): "))
+mins = int(input("Starting time (minutes): "))
+dura = int(input("Event duration (minutes): "))
+
+minutes=(mins+dura) % 60 # using modulus to get remaining minutes
+hours = int(hour + (mins +dura) / 60) %24 # using modulus to add hours if duration is more than 60 minutes
+
+print(hours,":",minutes)
