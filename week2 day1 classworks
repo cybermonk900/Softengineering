@@ -45,3 +45,25 @@ while number != 0:
 print("Odd numbers count:", odd_numbers)
 print("Even numbers count:", even_numbers)
 print("Numbers divisible by 3 count: ", divisible_by_3)
+
+#create a list to display numbers from 50 to 100 with an increment of 10
+l=[]
+for i in range(50, 101, 10):
+   l.append(i)
+print(l)
+
+#Program to input a year and check if its a leap year or not
+
+year=int(input("Enter a year: "))
+if year <1584:
+    print("Not within a Gregorian calender period")
+    
+elif year % 4 != 0:
+    print("Its a common year")
+elif year %100 !=0:
+    print("its a leap year")
+elif year % 400 != 0:
+     print("Its a common year")
+
+else:
+    print("its a leap year")
