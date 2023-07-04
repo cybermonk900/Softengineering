@@ -1,0 +1,20 @@
+#A program that uses a while loop and continuously asks the user to enter a word unless the user enters "chupacabra" as the secret exit word, in which case the message "You've successfully left the loop." should be printed to the screen, and the loop should terminate
+
+secret_word="chupacabra"
+while True:
+    word = input("Guess a word: ")
+    if word == "chupacabra":
+        break
+print("You've successfully left the loop")
+
+##################Ex 3.2.1.10 LAB
+
+# Prompt the user to enter a word
+# and assign it to the user_word variable.
+user_word=input("Enter a word: ")
+user_word = user_word.upper()
+for letter in user_word:
+    if letter in "AEIOU":
+        continue
+    # Complete the body of the for loop.
+    print(letter)
