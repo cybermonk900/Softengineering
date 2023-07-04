@@ -4,7 +4,7 @@ input_number = int(input("Enter a number: "))
 while input_number != secret_number:
     print("Ha ha! You're stuck in my loop")
     input_number = int(input("Enter a number: "))
-print("Well donne, muggle! you are free now"))
+print("Well donne, muggle! you are free now")
 
 
 #stretch task
