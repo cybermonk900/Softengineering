@@ -1,0 +1,26 @@
+# 3.2.1.14 lab Program to calculate the height of a pyramid
+#whose condition is each lower layer contains one block more than the layer above
+
+blocks = int(input("Enter the number of blocks: "))
+Height = 0
+layers = 1
+while layers <= blocks:
+    height += 1
+    blocks -= layers #substracts 1 from the layers i.e left side value is substracted by 1
+    layers += 1
+print("The height of the pyramid: ", height)
+
+################################################################
+#3.2.1.15 lab Collatz's hypothesis
+c0=int(input("Enter a non-negative and non-zero integer number: ")) 
+steps = 0
+while c0 != 1:
+    if c0%2 ==0:
+        c0 = c0 / 2
+    else:
+        c0 = 3 * c0 + 1
+    steps = steps +1
+    print(int(c0))
+print("steps = ",steps)
+
+#####################################################################
