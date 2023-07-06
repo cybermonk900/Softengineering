@@ -1,0 +1,28 @@
+##### Ex 3.4.1.13 lab ########################
+# step 1. create an empty list named beatles
+beatles = [] 
+print("Step 1:", beatles)
+
+# step 2. Used append method to add the members to the above list.
+for members in ["John Lennon", "Paul McCartney", "George Harrison"]:
+    beatles.append(members)
+print("Step 2:", beatles)
+
+# step 3.Used append method to add to the existing list.
+for new_members in range(2):
+    new_beatles_member = input("New Beatles member name: ")
+    beatles.append(new_beatles_member)
+print("Step 3:", beatles)
+
+# step 4. Use del instrucion to delete two strings from the list.
+del beatles[4]
+del beatles[3]
+print("Step 4:", beatles)
+
+# step 5. Inserts ringo star in the beginning of the list
+beatles.insert(0,"Ringl Starr")
+print("Step 5:", beatles)
+
+
+# testing list legth
+print("The Fab", len(beatles))
