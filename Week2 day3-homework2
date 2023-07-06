@@ -2,7 +2,7 @@
 #whose condition is each lower layer contains one block more than the layer above
 
 blocks = int(input("Enter the number of blocks: "))
-Height = 0
+height = 0
 layers = 1
 while layers <= blocks:
     height += 1
