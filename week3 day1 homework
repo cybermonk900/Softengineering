@@ -1,0 +1,13 @@
+#############Ex 3.1.6.9###################
+
+my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+# new_list to store non repeating elements
+new_list = [] 
+for element in my_list:
+    if element not in new_list: #Conditional statement that adds element in new_list only if the non repeating number is in my_list
+        new_list.append(element) 
+    else:
+        continue
+print(f"The list with unique elements only:{new_list}")
+
+#############
