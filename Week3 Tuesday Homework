@@ -54,8 +54,9 @@ def days_in_month(year, month):
     month_days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     if is_year_leap(year):
         month_days[1] = 29  # 29 days for February on a leap year.
-    return month_days[month - 1]
     print(month_days[month - 1])
+    return month_days[month - 1]
+    
 days_in_month(2000,2)
 
 test_years = [1900, 2000, 2016, 1987]
